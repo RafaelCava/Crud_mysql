@@ -24,7 +24,7 @@
  - A documentação da rotas esta na rota /explorer
 
 <div style="height:500px" align="center">
-  <img src="docs/sws.jpg" alt="Swagger rotas"/>
+  <img src="/src/docs/sws.jpg" alt="Swagger rotas"/>
 </div>
 
 ## Pacotes usados - 
