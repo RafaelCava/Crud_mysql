@@ -19,6 +19,8 @@
  - O projeto estará rodando na porta 8000
 ## Rotas
 
+ - A documentação da rotas esta na rota /explorer
+
 <div style="height:500px" align="center">
   <img src="docs/sws.jpg" alt="Swagger rotas"/>
 </div>
