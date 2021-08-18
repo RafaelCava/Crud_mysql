@@ -17,17 +17,31 @@ const selectCustomers = async () => {
   return await rows;
 }
 
+const selectCustomersById = async (id) => {
+  const conn = await connect();
+  const sql = 'SELECT * FROM clientes WHERE id=?;';
+  const [rows] = await conn.query(sql, [id]);
+  return await rows;
+}
+
 const insertCustomers = async (customer) => {
   const conn = await connect();
   const sql = 'INSERT INTO clientes(nome,idade,uf) VALUES (?,?,?);';
-  const values = [customer.nome, customer.idade, customer.uf]
+  const values = [customer.nome, customer.idade, customer.UF]
   await conn.query(sql, values)
 }
 
 const updateCustomer = async (id, customer) => {
   const conn = await connect();
   const sql = 'UPDATE clientes SET nome=?, idade=?, uf=? where id=?;';
-  const values = [customer.nome, customer.idade, customer.uf, id]
+  const values = [customer.nome, customer.idade, customer.UF, id]
+  await conn.query(sql, values);
+}
+
+const substituirCustomer = async (id, customer) => {
+  const conn = await connect();
+  const sql = 'UPDATE clientes SET nome=?, idade=?, uf=? where id=?;';
+  const values = [customer.nome, customer.idade, customer.UF, id]
   await conn.query(sql, values);
 }
 
@@ -39,7 +53,9 @@ const deleteCustomer = async (id) => {
 
 module.exports = {
   selectCustomers,
+  selectCustomersById,
   insertCustomers,
   updateCustomer,
+  substituirCustomer,
   deleteCustomer
 }
