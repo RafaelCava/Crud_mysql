@@ -64,7 +64,7 @@
     "/api/clientes/{id}": {
       "get": {
         "tags": [],
-        "description": "",
+        "description": "Retorna um cliente específico",
         "parameters": [
           {
             "name": "id",
@@ -84,7 +84,7 @@
       },
       "put": {
         "tags": [],
-        "description": "",
+        "description": "Substitui um cliente específico",
         "parameters": [
           {
             "name": "id",
@@ -122,7 +122,7 @@
       },
       "delete": {
         "tags": [],
-        "description": "",
+        "description": "Deleta um cliente específico",
         "parameters": [
           {
             "name": "id",
@@ -142,7 +142,7 @@
       },
       "patch": {
         "tags": [],
-        "description": "",
+        "description": "Altera campos de um Cliente específico",
         "parameters": [
           {
             "name": "id",
