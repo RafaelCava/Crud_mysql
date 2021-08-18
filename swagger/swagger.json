@@ -17,7 +17,7 @@
     "/api/clientes": {
       "get": {
         "tags": [],
-        "description": "",
+        "description": "Retorna todos os clientes no banco de dados",
         "parameters": [],
         "responses": {
           "200": {
@@ -30,7 +30,7 @@
       },
       "post": {
         "tags": [],
-        "description": "",
+        "description": "Insere um cliente no banco de dados",
         "parameters": [
           {
             "name": "obj",
