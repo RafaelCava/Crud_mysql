@@ -1,7 +1,7 @@
 {
-  "name": "node_sql",
+  "name": "CRUD_sql",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "server.js",
   "license": "MIT",
   "dependencies": {
     "express": "^4.17.1",
@@ -10,5 +10,7 @@
   "devDependencies": {
     "eslint": "^7.32.0",
     "nodemon": "^2.0.12"
-  }
+  },
+  "description": "Api CRUD feita com banco de dados SQL",
+  "author": "Rafael <ra.facavalcante@hotmail.com>"
 }
