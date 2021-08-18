@@ -17,8 +17,15 @@
   yarn start
  ```
 
+## Rotas
+
+<div style="height:500px" align="center">
+  <img src="docs/sws.jpg" alt="Swagger rotas"/>
+</div>
+
 ## Pacotes usados - 
  - mysql2
  - express
  - nodemon
  - eslint
+ - Swagger
