@@ -16,6 +16,8 @@
   #or
   yarn start
  ```
+ - Inicie seu banco de dados na porta 3006
+ 
  - O projeto estará rodando na porta 8000
 ## Rotas
 
