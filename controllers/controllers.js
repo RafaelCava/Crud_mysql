@@ -26,9 +26,6 @@ const getClientesById = async (req, res) => {
 
 const postCliente = async (req, res) => {
   const { nome, idade, UF } = req.body;
-  if (!nome || !idade || !UF)
-    return res.status(404).json({ message: 'Falta parâmetros no Body da sua requisição' })
-
   try {
     await db.insertCustomers({ nome, idade, UF })
     res.status(201).json({ message: 'Cliente criado com sucesso' })
