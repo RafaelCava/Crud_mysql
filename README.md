@@ -28,6 +28,8 @@
 </div>
 
 ## Pacotes usados - 
+ - JavaScript
+ - Node.js
  - mysql2
  - express
  - nodemon
