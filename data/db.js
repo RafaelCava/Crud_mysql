@@ -38,7 +38,7 @@ const updateCustomer = async (id, customer) => {
   await conn.query(sql, values);
 }
 
-const substituirCustomer = async (id, customer) => {
+const replaceCustomer = async (id, customer) => {
   const conn = await connect();
   const sql = 'UPDATE clientes SET nome=?, idade=?, uf=? where id=?;';
   const values = [customer.nome, customer.idade, customer.UF, id]
@@ -56,6 +56,6 @@ module.exports = {
   selectCustomersById,
   insertCustomers,
   updateCustomer,
-  substituirCustomer,
+  replaceCustomer,
   deleteCustomer
 }

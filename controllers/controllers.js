@@ -26,6 +26,9 @@ const getClientesById = async (req, res) => {
 
 const postCliente = async (req, res) => {
   const { nome, idade, UF } = req.body;
+  if (!nome || !idade || !UF)
+    return res.status(404).json({ message: 'Falta parâmetros no Body da sua requisição' })
+
   try {
     await db.insertCustomers({ nome, idade, UF })
     res.status(201).json({ message: 'Cliente criado com sucesso' })
@@ -54,10 +57,10 @@ const substituirCliente = async (req, res) => {
     return res.status(404).json({ message: 'Falta o parâmetro ID na URL' })
 
   if (!nome || !idade || !UF)
-    return res.status(404).json({ message: 'Falta parâmetros no Body da sua URL' })
+    return res.status(404).json({ message: 'Falta parâmetros no Body da sua requisição' })
 
   try {
-    await db.updateCustomer(id, { nome, idade, UF })
+    await db.replaceCustomer(id, { nome, idade, UF })
     res.status(200).json({ message: `Cliente com o Id: ${id} foi substituído` })
   } catch (err) {
     console.error(err);
