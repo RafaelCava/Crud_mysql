@@ -16,7 +16,7 @@
   #or
   yarn start
  ```
-
+ - O projeto estará rodando na porta 8000
 ## Rotas
 
 <div style="height:500px" align="center">
