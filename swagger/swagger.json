@@ -5,7 +5,7 @@
     "title": "REST API",
     "description": ""
   },
-  "host": "3.136.196.85:8000",
+  "host": "api-rafael.site:8000",
   "basePath": "/",
   "tags": [],
   "schemes": [
