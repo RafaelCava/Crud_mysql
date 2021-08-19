@@ -3,7 +3,7 @@ const connect = async () => {
     return global.connection;
 
   const mysql = require('mysql2/promise');
-  const connection = await mysql.createConnection("mysql.docker://root:root@localhost:3306/apidados");
+  const connection = await mysql.createConnection("mysql.docker://root:@localhost:3306/api_curso");
   console.log("Conectou no SQL!")
   global.connection = connection;
   return connection
